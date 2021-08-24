@@ -1,0 +1,393 @@
+
+/*===>>> default css <<<===*/
+.clearfix::after{
+    content: 0;
+    display: block;
+    clear: both;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+
+/*===>>> header section start <<<===*/
+.header_section{
+    background-color: #000;
+    height: 80px;
+}
+.header_section .header{}
+.header_section .header_logo{
+    width: 90px;
+    line-height: 80px;
+}
+.header_section .header_logo img{}
+.header_section .header_menu{}
+.header_section .header_menu ul{
+    margin-bottom: 0;
+}
+.header_section .header_menu ul li{
+    display: inline-block;
+    padding: 0 25px;
+}
+.header_section .header_menu ul li a {
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 80px;
+    position: relative;
+}
+.header_section .header .header_menu ul li a::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    top: 62%;
+    left: 0;
+    background-color: white;
+}
+.header_section .header .header_menu ul li a:hover::before{
+    width: 100%;
+    transition: .1s;
+}
+.header_section .header .header_menu ul li{
+    position: relative;
+}
+.header_section .header .header_menu ul li ul {
+	position: absolute;
+	top: 110%;
+	left: -30px;
+	background-color: #000;
+	width: 190px;
+	text-align: left;
+	border-top: 1px solid #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top center;
+    transform: scale(1);
+    transition: .2s;
+}
+.header_section .header .header_menu ul li:hover ul{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.header_section .header .header_menu ul li ul li {
+	display: block;
+	margin-left: -32px;
+}
+.header_section .header .header_menu ul li ul li:hover{
+    background-color: white;
+    transition: .1s;
+}
+.header_section .header .header_menu ul li ul li a {
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+}
+.header_section .header .header_menu ul li ul li:hover a{
+    color: black;
+}
+.header_section .header .header_menu ul li ul li a::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: black;
+}
+.header_section .header .header_menu ul li ul li:hover a::before{
+    width: 100%;
+    transition: .1s;
+}
+/*===>>> heading section end <<<===*/
+.banner_section{
+    background-image: url("https://i.ibb.co/fSDkrkN/a0c6042d4612d7adf44692fffac7e082.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 165px 0;
+}
+.banner_section .banner{}
+.banner_section .banner h2 {
+	font-size: 40px;
+	color: rgb(59, 57, 57);
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+}
+.banner_section .banner p {
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+    margin-bottom: 30px;
+}
+.banner_section .banner a {
+	background-color: black;
+	color: white;
+	padding: 12px 15px;
+	border-radius: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s;
+}
+.banner_section .banner a:hover{
+    background-color: white;
+    color: black;
+}
+.banner_section .banner .inner {
+	background-color: white;
+	color: black;
+	padding: 12px 25px;
+	border: none;
+	margin-left: 10px;
+	border-radius: 13px;
+    transition: .2s;
+}
+.banner_section .banner .inner:hover{
+    background-color: black;
+    color: white;
+}
+/*===>>> banner section end <<<===*/
+
+/*===>>> about section start <<<===*/
+.about_section{
+    background-color: #87a471;
+    padding: 50px 0;
+}
+.about_section .about{}
+.about_section .about .about_title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about_section .about .about_title h1 {
+	color: #ddd;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 1px 0 2px white;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 3px solid #ddd;
+}
+
+.about_section .about .about_text{
+    width: 50%;
+    margin-top: 40px;
+}
+.about_section .about .about_text p{
+    color: white;
+}
+.about_section .about .about_logo{
+    width: 39%;
+}
+.about_section .about .about_logo img{
+    width: 58%;
+}
+/*===>>> about section end <<<===*/
+
+/*===>>> service section start <<<===*/
+.service_section{
+    background-color: #606a64;
+    padding: 50px 0;
+}
+.service_section .service_title{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.service_section .service_title h1{
+    color: #ddd;
+    font-size: 45px;
+	font-weight: 700;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 1px 0 2px white;
+	text-transform: capitalize;
+	display: inline-block;
+	border-bottom: 3px solid #ddd;
+    margin-bottom: 15px;
+}
+.service_section .service_title h3 {
+	color: #ddd;
+	font-size: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.service_section .service_title p{
+    color: #ddd;
+}
+.service_section .service_item {
+	width: 25%;
+	background-color: white;
+	height: 200px;
+	border-radius: 20px;
+	margin: 50px 25px 0 70px;
+}
+.service_section .service_item .logo {
+	width: 26%;
+	text-align: right;
+	margin-top: 20px;
+}
+.service_section .service_item .logo img{}
+.service_section .service_item .service_text {
+	width: 69%;
+	margin-top: 15px;
+}
+.service_section .service_item .service_text h4 {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 600;
+    color: #48637f;
+}
+.service_section .service_item .service_text p{
+    color: #a4b1be;
+}
+/*===>>> service section end <<<===*/
+.content_section{
+    background-color: #87a471;
+    padding: 50px 0;
+}
+.content_section .content{}
+.content_section .content h2{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_section .content h6{
+    text-align: center;
+    color: white;
+}
+.content_section .content .content_box{
+    width: 48%;
+    border: 1px solid #ddd;
+    height: 440px;
+    text-align: center;
+    margin-top: 50px;
+}
+.content_section .content .content_box img{
+    width: 100%;
+}
+.content_section .content .content_box h5{
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #5e797f;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_section .content .content_box span{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content_section .content .content_item {
+	width: 21%;
+	margin: 40px 21px 0 23px;
+}
+/*===>>> content section end <<<===*/
+
+/*===>>> testimonial section start <<<===*/
+.testimonial_section{
+    background-color: #5b9776;
+    padding: 50px 0;
+}
+.testimonial_section .testimonial{}
+.testimonial_section .testimonial h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+.testimonial_section .testimonial h2::before{
+    content: "";
+    height: 3px;
+    width: 230px;
+    position: absolute;
+    top: 105%;
+    left: 440px;
+    background-color: #ddd;
+}
+.testimonial_section .testimonial .testimonial_item {
+	width: 28%;
+	text-align: center;
+	margin-top: 50px;
+	margin: 50px 59px 0 0px;
+}
+.testimonial_section .testimonial .testimonial_item img{}
+.testimonial_section .testimonial .testimonial_item li {
+	display: inline-block;
+	margin: 10px 7px 0 7px;
+}
+.testimonial_section .testimonial .testimonial_item li i{
+    font-size: 30px;
+    color: white;
+    transition: .4s;
+}
+.testimonial_section .testimonial .testimonial_item li i:hover{
+    color: yellow;
+}
+/*===>>> testimonial section end <<<===*/
+
+/*===>>> inner content section start <<<===*/
+.inner_content_section{
+    background-color: #5e6862;
+    padding: 75px 0;
+}
+.inner_content_section .inner_content{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.inner_content_section .inner_content h2{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.inner_content_section .inner_content p{
+    color: white;
+    margin-bottom: 20px;
+}
+.inner_content_section .inner_content a{
+    padding: 8px 20px;
+    background-color: #00bc9c;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .4s;
+}
+.inner_content_section .inner_content a:hover{
+    background-color: #4b6982;
+}
+/*===>>> inner content section end <<<===*/
+
+/*===>>> footer section start <<<===*/
+.footer_section{
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer_section span{
+    color: white;
+}
+/*===>>> footer section end <<<===*/
